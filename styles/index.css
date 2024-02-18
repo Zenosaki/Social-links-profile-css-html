@@ -1,0 +1,93 @@
+*{
+  user-select: none;
+}
+
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color:hsl(0, 0%, 8%) ;
+}
+
+
+.Container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.content-box{
+  width: 300px;
+  height: 550px;
+  background-color: hsl(0, 0%, 12%);
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
+  gap: 40px;
+  border-radius: 20px;
+}
+
+.user-icon img{
+  width: 80px;
+  border-radius: 50%;
+}
+
+.user-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.user-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.user-info .user-name{
+  color:hsl(0, 0%, 100%) ;
+  font-size:x-large;
+  font-weight: 400;
+}
+
+
+.user-info .user-location{
+  color:hsl(75, 94%, 57%) ;
+  font-size: 14px;
+  font-weight:600;
+}
+
+.user-description{
+  font-size: 15px;
+  text-align: center;
+  color:hsl(0, 0%, 100%) ;
+  font-weight: 400;
+}
+
+.user-social-media-buttons{
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
+}
+
+.user-social-media-buttons>button{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 20%) ;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.user-social-media-buttons>button:hover{
+  background-color:hsl(75, 94%, 57%) ;
+  color: hsl(0, 0%, 8%);
+}
